@@ -1,8 +1,5 @@
 package com.indra.eventossostenibles;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Usuario {
     private String nombre;
     private String correo;
