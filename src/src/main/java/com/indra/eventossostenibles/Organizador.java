@@ -1,23 +1,14 @@
 package com.indra.eventossostenibles;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Organizador {
     private String nombre;
     private String telefono;
     private String correo;
-    private List<Evento> listaEventos;
 
     Organizador(String nombre, String telefono, String correo) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
-        this.listaEventos = new ArrayList<Evento>();
-    }
-
-    public void añadirEvento(Evento e) {
-        this.listaEventos.add(e);
     }
 
     public String getNombre() {
@@ -44,18 +35,9 @@ public class Organizador {
         this.correo = correo;
     }
 
-    public List<Evento> getListaEventos() {
-        return listaEventos;
-    }
-
-    public void setListaEventos(List<Evento> listaEventos) {
-        this.listaEventos = listaEventos;
-    }
-
     @Override
     public String toString() {
-        return "Organizador [nombre=" + nombre + ", telefono=" + telefono + ", correo=" + correo + ", listaEventos="
-                + listaEventos + "]";
+        return "Organizador [nombre=" + nombre + ", telefono=" + telefono + ", correo=" + correo + "]";
     }
 
     @Override
@@ -65,7 +47,6 @@ public class Organizador {
         result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
         result = prime * result + ((telefono == null) ? 0 : telefono.hashCode());
         result = prime * result + ((correo == null) ? 0 : correo.hashCode());
-        result = prime * result + ((listaEventos == null) ? 0 : listaEventos.hashCode());
         return result;
     }
 
@@ -92,11 +73,6 @@ public class Organizador {
             if (other.correo != null)
                 return false;
         } else if (!correo.equals(other.correo))
-            return false;
-        if (listaEventos == null) {
-            if (other.listaEventos != null)
-                return false;
-        } else if (!listaEventos.equals(other.listaEventos))
             return false;
         return true;
     }

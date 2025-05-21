@@ -3,7 +3,7 @@ package com.indra.eventossostenibles;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Portal {
+public class Portal {/*
     private List<Usuario> listaUsuarios;
     private List<Evento> listaEventos;
     private List<Organizador> listaOrganizadores;
@@ -14,7 +14,7 @@ public class Portal {
         this.listaOrganizadores = new ArrayList<Organizador>();
     }
 
-    public void añadirAMapaUsuarios(Usuario usuario) {
+    public void añadirAListaUsuarios(Usuario usuario) {
         this.listaUsuarios.add(usuario);
     }
 
@@ -92,5 +92,5 @@ public class Portal {
             return false;
         return true;
     }
-
+*/
 }
