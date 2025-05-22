@@ -96,6 +96,13 @@ public class Evento {
     }
 
     @Override
+    public String toString() {
+        return "Evento [nombre=" + nombre + ", duracion=" + duracion + ", categoria=" + categoria + ", organizador="
+                + organizador + ", ubicacion=" + ubicacion + ", fecha=" + fecha + ", hora=" + hora
+                + ", listaAsistentes=" + listaAsistentes + "]";
+    }
+
+    @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
@@ -126,11 +133,6 @@ public class Evento {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "Evento [nombre=" + nombre + ", duracion=" + duracion + ", categoria=" + categoria + ", organizador="
-                + organizador + ", ubicacion=" + ubicacion + ", fecha=" + fecha + ", hora=" + hora + ", asistentes="
-                + listaAsistentes + "]";
-    }
+    
 
 }

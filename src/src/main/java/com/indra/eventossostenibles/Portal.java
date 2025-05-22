@@ -3,7 +3,7 @@ package com.indra.eventossostenibles;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Portal {/*
+public class Portal {
     private List<Usuario> listaUsuarios;
     private List<Evento> listaEventos;
     private List<Organizador> listaOrganizadores;
@@ -92,5 +92,7 @@ public class Portal {/*
             return false;
         return true;
     }
-*/
+
+    
+
 }
