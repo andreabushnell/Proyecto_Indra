@@ -10,12 +10,12 @@ GO
 use Eventos_Sostenibles
 go
 
-
 create table ORGANIZADORES
 (
     Nombre varchar(50) primary key,
-    Telefono TELEFONOS not null,
-    Correo varchar(30) not null
+    Telefono char(9) not null,
+    Correo varchar(30) not null,
+    constraint CK_TELEFONOS check (Telefono like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
 )
 
 create table USUARIOS
@@ -69,6 +69,27 @@ create table INSCRIPCIONES
         on delete cascade
         on update cascade
 ) 
+go
 
-create domain TELEFONOS as char(9)
-constraint CK_TELEOFONOScheck value like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'
+create or alter trigger TR_Usuario_DEL
+on USUARIOS after delete
+as
+    delete INSCRIPCIONES 
+    where Usuario=(select Correo from Deleted)
+go
+
+create or alter trigger TR_Organizador_DEL
+on ORGANIZADORES after delete
+as 
+    delete EVENTOS 
+    where Organizador=(select Nombre from deleted)
+go
+
+create or alter trigger TR_Evento_DEL
+on EVENTOS after delete
+as
+    delete INSCRIPCIONES 
+    where Evento=(select Nombre from Deleted)
+    delete TIENEN_LUGAR
+    where Evento=(select Nombre from Deleted)
+go
