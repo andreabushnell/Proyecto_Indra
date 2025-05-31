@@ -14,34 +14,52 @@ public class Portal {
         this.listaOrganizadores = new ArrayList<Organizador>();
     }
 
-    public void añadirAListaUsuarios(Usuario usuario) {
-        if (!listaUsuarios.contains(usuario))
+    public Usuario altaUsuario(Usuario usuario) {
+        if (!listaUsuarios.contains(usuario)) {
             listaUsuarios.add(usuario);
+            return usuario;
+        }
+        return null;
     }
 
-    public void eliminarDeListaUsuarios(Usuario usuario) {
-        if (listaUsuarios.contains(usuario))
+    public Usuario bajaUsuario(Usuario usuario) {
+        if (listaUsuarios.contains(usuario)) {
             listaUsuarios.remove(usuario);
+            return usuario;
+        }
+        return null;
     }
 
-    public void añadirAListaEventos(Evento evento) {
-        if (!listaEventos.contains(evento))
+    public Evento altaEvento(Evento evento) {
+        if (!listaEventos.contains(evento)) {
             listaEventos.add(evento);
+            return evento;
+        }
+        return null;
     }
 
-    public void eliminarDeListaEventos(Evento evento) {
-        if (listaEventos.contains(evento))
+    public Evento bajaEvento(Evento evento) {
+        if (listaEventos.contains(evento)) {
             listaEventos.remove(evento);
+            return evento;
+        }
+        return null;
     }
 
-    public void añadirAListaOrganizadores(Organizador organizador) {
-        if (!listaOrganizadores.contains(organizador))
+    public Organizador altaOrganizador(Organizador organizador) {
+        if (!listaOrganizadores.contains(organizador)) {
             listaOrganizadores.add(organizador);
+            return organizador;
+        }
+        return null;
     }
 
-    public void eliminarDeListaOrganizadores(Organizador organizador) {
-        if (listaOrganizadores.contains(organizador))
+    public Organizador bajaOrganizador(Organizador organizador) {
+        if (listaOrganizadores.contains(organizador)) {
             listaOrganizadores.remove(organizador);
+            return organizador;
+        }
+        return null;
     }
 
     public List<Usuario> getListaUsuarios() {

@@ -29,18 +29,27 @@ public class Evento {
         this.listaAsistentes = new ArrayList<Usuario>();
     }
 
-    public void inscribirParticipante(Usuario usuario) {
-        if (!listaAsistentes.contains(usuario))
+    public Usuario inscribirParticipante(Usuario usuario) {
+        if (!listaAsistentes.contains(usuario)) {
             listaAsistentes.add(usuario);
+            return usuario;
+        }
+        return null;
     }
 
-    public void cancelarEvento() {
-        this.setActivo(false);
+    public boolean cancelarEvento() {
+        if (activo) {
+            this.setActivo(false);
+            return true;
+        }
+        return false;
     }
 
-    public void cancelarInscripcion(Usuario usuario) {
-        if (listaAsistentes.contains(usuario))
+    public Usuario cancelarInscripcion(Usuario usuario) {
+        if (listaAsistentes.contains(usuario)) {
             listaAsistentes.remove(usuario);
+            return usuario;
+        } return null;
     }
 
     public String getNombre() {
@@ -107,7 +116,7 @@ public class Evento {
         this.listaAsistentes = asistentes;
     }
 
-    public boolean getActivo() {
+    public boolean isActivo() {
         return this.activo;
     }
 
