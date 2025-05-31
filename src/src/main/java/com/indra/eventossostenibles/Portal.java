@@ -15,15 +15,33 @@ public class Portal {
     }
 
     public void añadirAListaUsuarios(Usuario usuario) {
-        this.listaUsuarios.add(usuario);
+        if (!listaUsuarios.contains(usuario))
+            listaUsuarios.add(usuario);
+    }
+
+    public void eliminarDeListaUsuarios(Usuario usuario) {
+        if (listaUsuarios.contains(usuario))
+            listaUsuarios.remove(usuario);
     }
 
     public void añadirAListaEventos(Evento evento) {
-        this.listaEventos.add(evento);
+        if (!listaEventos.contains(evento))
+            listaEventos.add(evento);
+    }
+
+    public void eliminarDeListaEventos(Evento evento) {
+        if (listaEventos.contains(evento))
+            listaEventos.remove(evento);
     }
 
     public void añadirAListaOrganizadores(Organizador organizador) {
-        this.listaOrganizadores.add(organizador);
+        if (!listaOrganizadores.contains(organizador))
+            listaOrganizadores.add(organizador);
+    }
+
+    public void eliminarDeListaOrganizadores(Organizador organizador) {
+        if (listaOrganizadores.contains(organizador))
+            listaOrganizadores.remove(organizador);
     }
 
     public List<Usuario> getListaUsuarios() {
@@ -92,7 +110,5 @@ public class Portal {
             return false;
         return true;
     }
-
-    
 
 }

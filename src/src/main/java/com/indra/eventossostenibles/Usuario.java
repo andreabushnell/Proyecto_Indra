@@ -44,6 +44,7 @@ public class Usuario {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
+        result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
         result = prime * result + ((correo == null) ? 0 : correo.hashCode());
         result = prime * result + ((telefono == null) ? 0 : telefono.hashCode());
         return result;
@@ -58,6 +59,11 @@ public class Usuario {
         if (getClass() != obj.getClass())
             return false;
         Usuario other = (Usuario) obj;
+        if (nombre == null) {
+            if (other.nombre != null)
+                return false;
+        } else if (!nombre.equals(other.nombre))
+            return false;
         if (correo == null) {
             if (other.correo != null)
                 return false;
@@ -70,7 +76,5 @@ public class Usuario {
             return false;
         return true;
     }
-
-    
 
 }
