@@ -5,7 +5,7 @@ public class Organizador {
     private String telefono;
     private String correo;
 
-    Organizador(String nombre, String telefono, String correo) {
+    public Organizador(String nombre, String telefono, String correo) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;

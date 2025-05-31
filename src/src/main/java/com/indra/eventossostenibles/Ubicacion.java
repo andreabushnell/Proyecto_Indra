@@ -1,10 +1,10 @@
 package com.indra.eventossostenibles;
 
 public class Ubicacion {
-    public String direccion;
-    public String tipo;
+    private String direccion;
+    private String tipo;
 
-    Ubicacion(String direccion, String tipo) {
+    public Ubicacion(String direccion, String tipo) {
         this.direccion = direccion;
         this.tipo = tipo;
     }

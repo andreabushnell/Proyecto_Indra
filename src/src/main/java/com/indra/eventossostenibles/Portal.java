@@ -8,7 +8,7 @@ public class Portal {
     private List<Evento> listaEventos;
     private List<Organizador> listaOrganizadores;
 
-    Portal() {
+    public Portal() {
         this.listaUsuarios = new ArrayList<Usuario>();
         this.listaEventos = new ArrayList<Evento>();
         this.listaOrganizadores = new ArrayList<Organizador>();
@@ -22,12 +22,12 @@ public class Portal {
         return null;
     }
 
-    public Usuario bajaUsuario(Usuario usuario) {
+    public boolean bajaUsuario(Usuario usuario) {
         if (listaUsuarios.contains(usuario)) {
             listaUsuarios.remove(usuario);
-            return usuario;
+            return true;
         }
-        return null;
+        return false;
     }
 
     public Evento altaEvento(Evento evento) {
@@ -38,12 +38,12 @@ public class Portal {
         return null;
     }
 
-    public Evento bajaEvento(Evento evento) {
+    public boolean bajaEvento(Evento evento) {
         if (listaEventos.contains(evento)) {
             listaEventos.remove(evento);
-            return evento;
+            return true;
         }
-        return null;
+        return false;
     }
 
     public Organizador altaOrganizador(Organizador organizador) {
@@ -54,12 +54,12 @@ public class Portal {
         return null;
     }
 
-    public Organizador bajaOrganizador(Organizador organizador) {
+    public boolean bajaOrganizador(Organizador organizador) {
         if (listaOrganizadores.contains(organizador)) {
             listaOrganizadores.remove(organizador);
-            return organizador;
+            return true;
         }
-        return null;
+        return false;
     }
 
     public List<Usuario> getListaUsuarios() {

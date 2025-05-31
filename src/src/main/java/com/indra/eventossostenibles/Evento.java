@@ -16,7 +16,7 @@ public class Evento {
     private boolean activo;
     private List<Usuario> listaAsistentes;
 
-    Evento(String nombre, int duracion, String categoria, Organizador organizador, Ubicacion ubicacion, LocalDate fecha,
+    public Evento(String nombre, int duracion, String categoria, Organizador organizador, Ubicacion ubicacion, LocalDate fecha,
             LocalDateTime hora, boolean activo) {
         this.nombre = nombre;
         this.duracion = duracion;
@@ -45,11 +45,11 @@ public class Evento {
         return false;
     }
 
-    public Usuario cancelarInscripcion(Usuario usuario) {
+    public boolean cancelarInscripcion(Usuario usuario) {
         if (listaAsistentes.contains(usuario)) {
             listaAsistentes.remove(usuario);
-            return usuario;
-        } return null;
+            return true;
+        } return false;
     }
 
     public String getNombre() {
@@ -108,14 +108,6 @@ public class Evento {
         this.hora = hora;
     }
 
-    public List<Usuario> getAsistentes() {
-        return listaAsistentes;
-    }
-
-    public void setAsistentes(List<Usuario> asistentes) {
-        this.listaAsistentes = asistentes;
-    }
-
     public boolean isActivo() {
         return this.activo;
     }
@@ -132,10 +124,12 @@ public class Evento {
         this.listaAsistentes = listaAsistentes;
     }
 
+    
+
     @Override
     public String toString() {
         return "Evento [nombre=" + nombre + ", duracion=" + duracion + ", categoria=" + categoria + ", organizador="
-                + organizador + ", ubicacion=" + ubicacion + ", fecha=" + fecha + ", hora=" + hora + ", estado="
+                + organizador + ", ubicacion=" + ubicacion + ", fecha=" + fecha + ", hora=" + hora + ", activo="
                 + activo + ", listaAsistentes=" + listaAsistentes + "]";
     }
 
@@ -205,5 +199,4 @@ public class Evento {
             return false;
         return true;
     }
-
 }

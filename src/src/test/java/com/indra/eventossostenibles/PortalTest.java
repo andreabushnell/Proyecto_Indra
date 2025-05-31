@@ -2,7 +2,9 @@ package com.indra.eventossostenibles;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -12,13 +14,13 @@ import java.util.List;
 import org.junit.Before;
 
 public class PortalTest {
-    Portal portal;
-    List<Usuario> listaUsuarios;
-    List<Evento> listaEventos;
-    List<Organizador> listaOrganizadores;
-    Evento evento;
-    Usuario usuario;
-    Organizador organizador;
+    public Portal portal;
+    public List<Usuario> listaUsuarios;
+    public List<Evento> listaEventos;
+    public List<Organizador> listaOrganizadores;
+    public Evento evento;
+    public Usuario usuario;
+    public Organizador organizador;
     @Before
     public void init() {
         portal = new Portal();
@@ -41,7 +43,10 @@ public class PortalTest {
 
     @Test
     public void testBajaUsuario() {
-        assertNotNull(portal.bajaUsuario(usuario));
+        portal.altaUsuario(usuario);
+        assertTrue(portal.bajaUsuario(usuario));
+        portal.bajaUsuario(usuario); 
+        assertFalse(portal.bajaUsuario(usuario)); 
     }
 
     @Test
@@ -51,7 +56,8 @@ public class PortalTest {
 
     @Test
     public void testBajaEvento() {
-        assertNotNull(portal.bajaEvento(evento));
+        portal.altaEvento(evento);
+        assertTrue(portal.bajaEvento(evento));
     }
 
     @Test
@@ -61,7 +67,8 @@ public class PortalTest {
 
     @Test
     public void testBajaOrganizador() {
-        assertNotNull(portal.bajaOrganizador(organizador));
+        portal.altaOrganizador(organizador);
+        assertTrue(portal.bajaOrganizador(organizador));
     }
 
 }
