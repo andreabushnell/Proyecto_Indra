@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border: 1px solid rgb(80, 139, 25);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: rgb(80, 139, 25);
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.boton-añadir {
+  background-color: rgb(80, 139, 25);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.boton-añadir:hover {
+  background-color: rgb(8, 160, 255);
+}
+
+.lista-evento {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item-evento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(152, 201, 103);
+  padding: 1rem;
+  color: white;
+}
+
+.nombre-evento {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.boton-editar {
+  background-color: white;
+  color: rgb(80, 139, 25);
+  border: 2px solid rgb(80, 139, 25);
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.boton-editar:hover {
+  background-color: rgb(8, 160, 255);
+  color: white;
+  border-color: rgb(8, 160, 255);
+}
+
+.volver a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+.volver a:hover {
+  color: rgb(131, 212, 131);
+}

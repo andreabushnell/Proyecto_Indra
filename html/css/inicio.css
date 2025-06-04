@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+html {
+  height: 100%;
+}
+
+/*Estilo cabeza de página*/
+
+.cabecera {
+  background-color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+}
+.logo-eventos-sostenibles{
+  float: left;
+  width: 8%;
+  position: relative;
+  border: 1px solid rgb(80, 139, 25);
+}
+.logo-eventos-sostenibles img {
+  flex-shrink: 0;
+  width: auto;
+  height: 100%;
+  position: absolute;
+}
+.titulo-eventos-sostenibles{
+  float: left;
+  width: 92%;
+  position: relative;
+  height: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  background-color:rgb(80, 139, 25)
+}
+.titulo-eventos-sostenibles h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+
+/*Estilo carrusel*/
+
+.envoltorio-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor-slides {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.flecha-slide {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+  z-index: 999;
+}
+
+.flecha-slide:hover,
+.flecha-slide:focus {
+  opacity: 1;
+}
+
+#flecha-slide-previo {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#flecha-slide-siguiente {
+  right: 0;
+  padding-right: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+.contenedor-slides {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.contenedor-slides::-webkit-scrollbar {
+  display: none;
+}
+
+/*Estilo enlaces tabla eventos*/
+
+.tabla-evento a:link,
+.tabla-evento a:visited {
+  color: white;
+  text-decoration: none;
+}
+.tabla-evento a:hover,
+.tabla-evento a:focus {
+  color: rgb(8, 160, 255);
+}
+
+/*Estilo tablas eventos*/
+
+.tabla-evento {
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  width: 50%;
+  float: left;
+}
+
+.tabla-evento table {
+  border-collapse: collapse;
+  color: white;
+  margin: auto;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+.tabla-evento th {
+  padding: 10px 10px;
+  background-color: rgb(152, 201, 103);
+}
+
+/*Estilo imágenes eventos*/
+
+.imagen-evento {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*Estilo contenedor de eventos*/
+.evento {
+  display: flex;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+
+/*Estilo into portal*/
+.intro-portal {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.intro-portal h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(80, 139, 25);
+}
+.intro-portal p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(80, 139, 25);
+}
+.intro-portal table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.intro-portal th {
+  padding: 1rem;
+  border: 1px solid rgb(80, 139, 25);
+}
+.intro-portal td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(80, 139, 25);
+  border-bottom: 1px solid rgb(80, 139, 25);
+}
+
+/*Estilo zona organizadores*/
+.zona-organizadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.zona-organizadores th{
+  padding: 1rem;
+}
+
+.zona-organizadores a:link,
+.zona-organizadores a:visited {
+  color: black;
+  text-decoration: none;
+}
+.zona-organizadores a:hover,
+.zona-organizadores a:focus {
+  color: rgb(8, 160, 255);
+}
+
+/*Estilo ir a lista*/
+.enlace-lista:hover {
+  color: rgb(8, 160, 255);
+}
+.enlace-lista:link, :visited{
+  color: rgb(80, 139, 25);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/*Estilo sección organizadores*/
+.seccion-organizador a{
+  color: rgb(80, 139, 25);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.seccion-organizador a:hover,
+.seccion-organizador a:focus {
+  color: rgb(8, 160, 255);
+}
+
+.seccion-organizador table{
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.seccion-organizador{
+  width: 100%;
+  border: 5px solid white;
+  padding-bottom: 1.5rem;
+}
+
+.seccion-organizador td {
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(152, 201, 103);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
