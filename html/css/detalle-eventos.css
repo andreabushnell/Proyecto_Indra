@@ -1,0 +1,61 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  background: #f4f9f4;
+  color: #333;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+p {
+  margin-top: 20px;
+}
+
+body.festival {
+  background-color: #e8f5e9;
+}
+
+body.conferencia {
+  background-color: #eef4f7;
+}
+
+body.taller {
+  background-color: #f9f5f0;
+}
+
+/*Estilo imagenes eventos*/
+.imagen-evento{
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.imagen-evento img {
+  width: 33%;
+}
+
+/*Estilo enlaces*/
+.volver a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+.volver a:hover {
+  color: rgb(131, 212, 131);
+}
