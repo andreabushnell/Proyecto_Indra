@@ -3,11 +3,11 @@
 Este repositorio contiene el desarrollo del Proyecto Dual Indra - DAW1 2025.  
 
 ## Índice
- * [Introducción](#introducci-n)
- * [Instalación de la máquina virtual y creación del servidor local](#instalaci-n-de-la-m-quina-virtual-y-creaci-n-del-servidor-local)
- * [Página web](#p-gina-web)
- * [Base de datos](#base-de-datos)
- * [Programación](#programaci-n) 
+ * [-Introducción](#introducci-n)
+ * [-Instalación de la máquina virtual y creación del servidor local](#instalaci-n-de-la-m-quina-virtual-y-creaci-n-del-servidor-local)
+ * [-Página web](#p-gina-web)
+ * [-Base de datos](#base-de-datos)
+ * [-Programación](#programaci-n) 
 
 ## Introducción
 
