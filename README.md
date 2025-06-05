@@ -3,11 +3,11 @@
 Este repositorio contiene el desarrollo del Proyecto Dual Indra - DAW1 2025.  
 
 ## Índice
-1. [Introducción](#introduccion)
-2. [Instalación de la máquina virtual y creación del servidor local](#instalacion-de-la-maquina-virtual-y-creacion-del-servidor-local)
-3. [Página web](#pagina-web)
-4. [Base de datos](#base-de-datos)
-5. [Programación](#programacion)  
+ * [Introducción](#introducci-n)
+ * [Instalación de la máquina virtual y creación del servidor local](#instalaci-n-de-la-m-quina-virtual-y-creaci-n-del-servidor-local)
+ * [Página web](#p-gina-web)
+ * [Base de datos](#base-de-datos)
+ * [Programación](#programaci-n) 
 
 ## Introducción
 
@@ -40,5 +40,8 @@ La base de datos enmarca las relaciones entre los distintos elementos del proyec
 
 ## Programación
 
-El apartado de programación engloba la lógica que rodea a los elementos del proyecto, detalla los objetos que surgen de estos elementos, así como los métodos relacionados a ellos y las pruebas unitarias que testean su correcto funcionamiento. En este caso se utilizó Java como lenguaje de programación, y Maven como framework para el desarrollo.
+El apartado de programación engloba la lógica que rodea a los elementos del proyecto, detalla los objetos que surgen de estos elementos, así como los métodos relacionados a ellos y las pruebas unitarias que testean su correcto funcionamiento. En este caso se utilizó Java como lenguaje de programación, y Maven como framework para el desarrollo.  
 
+    
+---
+Proyecto desarrollado por Andrea Bushnell desde el IES Fernando Wirtz.  
