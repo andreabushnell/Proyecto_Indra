@@ -3,15 +3,15 @@
 Este repositorio contiene el desarrollo del Proyecto Dual Indra - DAW1 2025.  
 
 ## Índice
- * [-Introducción](#introducci-n)
- * [-Instalación de la máquina virtual y creación del servidor local](#instalaci-n-de-la-m-quina-virtual-y-creaci-n-del-servidor-local)
- * [-Página web](#p-gina-web)
- * [-Base de datos](#base-de-datos)
- * [-Programación](#programaci-n) 
+ * [Introducción](#introducción)
+ * [Instalación de la máquina virtual y creación del servidor local](#instalación-de-la-máquina-virtual-y-creación-del-servidor-local)
+ * [Página web](#página-web)
+ * [Base de datos](#base-de-datos)
+ * [Programación](#programación) 
 
 ## Introducción
 
-Este proyecto nace del plan de formación ofrecido por la empresa Indra a estudiantes de primer año de Desarrollo de Aplicaciones Web y Desarrollo de Aplicaciones Multiplataforma. Su objetivo es consolidar lo aprendido en el curso en una tarea final que reúne contenidos de lenguajes de marcas, programación orientada a objetos, bases de datos y sistemas operativos. Además, ofrece a los alumnos la oportunidad de ganar más experiencia en el uso de herramientas como Github y Visual Studio Code.
+Este proyecto nace del plan de formación ofrecido por la empresa Indra a estudiantes de primer año de Desarrollo de Aplicaciones Web y Desarrollo de Aplicaciones Multiplataforma. Su objetivo es consolidar lo aprendido en el curso en una tarea final que reúne contenidos de lenguajes de marcas, programación orientada a objetos, bases de datos y sistemas operativos. Además, ofrece a los alumnos la oportunidad de ganar más experiencia en el uso de herramientas como Github, Github Copilot y Visual Studio Code.
 
 La temática del proyecto rodea la gestión de eventos relacionados con la sostenibilidad, en la que tenemos dos protagonistas principales: los usuarios que asisten a los eventos, y los organizadores que los gestionan.
 
