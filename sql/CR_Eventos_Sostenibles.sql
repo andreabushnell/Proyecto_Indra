@@ -12,7 +12,7 @@ go
 
 create table ORGANIZADORES
 (
-    Nombre varchar(50) primary key,
+    Nombre varchar(20) primary key,
     Telefono char(9) not null,
     Correo varchar(30) not null,
     constraint CK_TELEFONOS check (Telefono like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
@@ -36,8 +36,8 @@ create table EVENTOS
 (
     Nombre varchar(50) primary key,
     Duracion int not null,
-    Categoria varchar(50) not null,
-    Organizador varchar(50) not null,
+    Categoria varchar(20) not null,
+    Organizador varchar(20) not null,
     constraint FK_EVENTOS_Organizador foreign key (Organizador) references ORGANIZADORES(Nombre)
         on delete cascade
         on update cascade
@@ -47,7 +47,7 @@ create table TIENEN_LUGAR
 (
     Evento varchar(50),
     Fecha date,
-    Ubicacion varchar(50),
+    Ubicacion varchar(50) not null,
     constraint PK_TIENEN_LUGAR primary key (Evento, Fecha),
     constraint FK_TIENEN_LUGAR_Evento foreign key (Evento) references EVENTOS(nombre)
         on delete cascade
